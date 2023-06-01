@@ -5,13 +5,17 @@
   },
   "main": "/index.js",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "^5.0.1"
   },
+  "homepage": "https://fabiendelmotte.github.io/react_tic-tac-toe",
   "name": "react_tic-tac-toe",
   "description": "React's tutorial",
   "version": "0.0.0",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
